@@ -5,9 +5,17 @@ I've been thinking of configuring commitlint for our d20 app. Commitlint is a li
 The only thing that is required from you is following the following conventions. You still git add/commit/push like normally.
 
 ```sh
-git add .
-git commit -m "docs: add commitlint demo"
-git push
+⚡ git commit -m "chore: add .gitignore"
+husky > commit-msg (node v8.12.0)
+
+⧗   input: chore: add .gitignore
+✔   found 0 problems, 0 warnings 
+    (Need help? -> https://github.com/conventional-changelog/commitlint#what-is-commitlint )
+
+
+[master e8bae01] chore: add .gitignore
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
 ```
 
 ## Conventional commits

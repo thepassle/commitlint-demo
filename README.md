@@ -4,8 +4,12 @@ I've been thinking of configuring commitlint for our d20 app. Commitlint is a li
 
 The only thing that is required from you is following the following conventions. You still git add/commit/push like normally.
 
+✅ Correct:
+
 ```sh
+
 ⚡ git commit -m "chore: add .gitignore"
+
 husky > commit-msg (node v8.12.0)
 
 ⧗   input: chore: add .gitignore
@@ -16,6 +20,26 @@ husky > commit-msg (node v8.12.0)
 [master e8bae01] chore: add .gitignore
  1 file changed, 1 insertion(+)
  create mode 100644 .gitignore
+```
+
+
+❌ Wrong:
+
+```sh
+
+⚡ git commit -m "add thing to make the other thing change what was the bugs problem or whatever"
+
+husky > commit-msg (node v8.12.0)
+
+⧗   input: add thing to make the other thing change what was the bugs problem or whatever
+✖   header must not be longer than 72 characters, current length is 78 [header-max-length]
+✖   subject may not be empty [subject-empty]
+✖   type may not be empty [type-empty]
+✖   found 3 problems, 0 warnings 
+    (Need help? -> https://github.com/conventional-changelog/commitlint#what-is-commitlint )
+
+
+husky > commit-msg hook failed (add --no-verify to bypass)
 ```
 
 ## Conventional commits

@@ -4,6 +4,8 @@ I've been thinking of configuring commitlint for our d20 app. Commitlint is a li
 
 The only thing that is required from you is following the following conventions. You still git add/commit/push like normally.
 
+## Demo:
+
 ✅ Correct:
 
 ```sh
